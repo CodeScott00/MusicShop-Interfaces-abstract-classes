@@ -6,14 +6,12 @@ public class Drumstick {
 
     private String make;
     private String description;
-    private double priceBought;
-    private double priceSold;
+
 
     public Drumstick(String make, String description, double priceBought, double priceSold) {
         this.make = make;
         this.description = description;
-        this.priceBought = priceBought;
-        this.priceSold = priceSold;
+
     }
 
     public String getMake() {
@@ -24,14 +22,7 @@ public class Drumstick {
         return description;
     }
 
-    public double getPriceBought() {
-        return priceBought;
-    }
 
-    public double getPriceSold() {
-        return priceSold;
-    }
 }
-
 
 
