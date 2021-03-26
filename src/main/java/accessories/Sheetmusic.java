@@ -1,12 +1,13 @@
 package accessories;
 
-public class Sheetmusic {
+public class Sheetmusic extends StockItems {
 
     private String author;
     private String description;
 
 
-    public Sheetmusic(String author, String description){
+    public Sheetmusic(double priceBought, double priceSold, String author, String description){
+        super(priceBought, priceSold);
         this.author = author;
         this.description = description;
     }

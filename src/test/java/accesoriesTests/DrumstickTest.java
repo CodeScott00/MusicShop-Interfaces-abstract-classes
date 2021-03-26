@@ -12,11 +12,16 @@ public class DrumstickTest {
 
     @Before
     public void before(){
-        drumstick = new Drumstick("Rocket", "Sexy Drumstick", 10, 30);
+        drumstick = new Drumstick(20,40,"Rocket", "Sexy Drumstick");
     }
 
     @Test
     public void hasMake(){
         assertEquals("Rocket", drumstick.getMake());
+    }
+
+    @Test
+    public void hasPriceBought(){
+        assertEquals(20, drumstick.getPriceBought(), 0);
     }
 }

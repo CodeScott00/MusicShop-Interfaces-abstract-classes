@@ -1,7 +1,9 @@
 package instruments;
 
-//will extends stockitem and implemnt iplay
-public abstract class Instrument {
+import behaviours.IPlay;
+
+//will implemnt iplay next and then be passed down and tested at sublclasses
+public abstract class Instrument  {
 
     private String madeOfMaterial;
     private String colour;

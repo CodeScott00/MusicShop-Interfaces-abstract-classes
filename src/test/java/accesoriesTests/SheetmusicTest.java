@@ -12,11 +12,17 @@ public class SheetmusicTest {
 
     @Before
     public void before() {
-        sheetmusic = new Sheetmusic("Galileo", "Musical ears");
+        sheetmusic = new Sheetmusic(10,21.99,"Galileo", "Musical ears");
     }
 
     @Test
     public void hasAuthor(){
         assertEquals("Galileo", sheetmusic.getAuthor());
     }
+
+    @Test
+    public void hasPriceSold(){
+        assertEquals(21.99, sheetmusic.getPriceSold(), 0);
+    }
+
 }
