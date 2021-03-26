@@ -12,11 +12,16 @@ public class pianoTest {
 
     @Before
     public void before(){
-        piano = new Piano(88);
+        piano = new Piano("wood", "brown" ,88);
     }
 
     @Test
     public void hasNumOfKeys(){
         assertEquals(88, piano.getNumOfKeys());
+    }
+
+    @Test
+    public void hasMadeOfMaterial(){
+        assertEquals("wood", piano.getMadeOfMaterial());
     }
 }

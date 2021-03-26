@@ -1,10 +1,11 @@
 package instruments;
 
-public class Piano {
+public class Piano extends Instrument{
 
     private int numOfKeys;
 
-    public Piano(int numOfKeys){
+    public Piano(String madeOfMaterial, String colour, int numOfKeys) {
+        super(madeOfMaterial, colour);
         this.numOfKeys = numOfKeys;
     }
 

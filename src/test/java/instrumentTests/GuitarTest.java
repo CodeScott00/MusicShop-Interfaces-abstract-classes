@@ -12,11 +12,17 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        guitar = new Guitar(6);
+        guitar = new Guitar("fire", "red",6);
     }
 
     @Test
     public void hasNumOfStrings(){
         assertEquals(6, guitar.getNumOfString());
     }
+
+    @Test
+    public void hasMadeOfMaterial(){
+        assertEquals("fire", guitar.getMadeOfMaterial());
+    }
+
 }
