@@ -1,5 +1,4 @@
 import behaviours.ISell;
-import instruments.Guitar;
 
 import java.util.ArrayList;
 
@@ -29,4 +28,13 @@ public class MusicShop {
     public void removeItemFromStock(ISell item){
         stock.remove(item);
     }
+
+//    public double calculateMarkUp(){              //should i implement isell for markup?
+//        double total = 0;
+//        for (ISell item in stock){
+//            total += calculateMarkUp();
+//        }
+//        return total;
+//
+//    }
 }

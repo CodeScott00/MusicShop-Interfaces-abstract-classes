@@ -49,4 +49,11 @@ public class MusicShopTest {
         assertEquals(1,musicShop.getStockList());
 
     }
+
+//    @Test
+//    public void hasTotalMarkup(){
+//        musicShop.addToStockList(guitar);
+//        musicShop.addToStockList(sheetmusic);
+//        assertEquals(20, musicShop.calculateMarkUp());
+//    }
 }
