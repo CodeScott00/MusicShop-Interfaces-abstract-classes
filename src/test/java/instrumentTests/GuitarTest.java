@@ -12,7 +12,7 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        guitar = new Guitar("fire", "red",6);
+        guitar = new Guitar(75.10, 109.50,"fire", "red",6);
     }
 
     @Test
@@ -28,6 +28,11 @@ public class GuitarTest {
     @Test
     public void canPlay(){
         assertEquals("ding a ding adingaling", guitar.play());
+    }
+
+    @Test
+    public void hasMarkup(){
+        assertEquals(34.4, guitar.calculateMarkUp(), 0.1);
     }
 
 }

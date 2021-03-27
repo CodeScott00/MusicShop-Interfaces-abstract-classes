@@ -4,8 +4,8 @@ public class Saxophone extends Instrument{
 
     private int numOfValves;
 
-    public Saxophone(String madeOfMaterial, String colour, int numOfValves){
-        super(madeOfMaterial, colour);
+    public Saxophone(double priceBought, double priceSold, String madeOfMaterial, String colour, int numOfValves){
+        super(priceBought, priceSold, madeOfMaterial, colour);
         this.numOfValves = numOfValves;
     }
 
@@ -15,5 +15,9 @@ public class Saxophone extends Instrument{
 
     public String play(){
         return "bing bing BINNNG bing";
+    }
+
+    public double calculateMarkUp(){
+        return getPriceSold() - getPriceBought();
     }
 }

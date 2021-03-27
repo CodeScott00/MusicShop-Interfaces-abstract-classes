@@ -12,7 +12,7 @@ public class saxophoneTest {
 
     @Before
     public void before(){
-        saxophone = new Saxophone("brass","gold",25);
+        saxophone = new Saxophone(55,130,"brass","gold",25);
     }
 
     @Test
@@ -28,5 +28,10 @@ public class saxophoneTest {
     @Test
     public void canPlay(){
         assertEquals("bing bing BINNNG bing", saxophone.play());
+    }
+
+    @Test
+    public void hasMarkUp(){
+        assertEquals(75, saxophone.calculateMarkUp(),0.1);
     }
 }
