@@ -24,4 +24,9 @@ public class pianoTest {
     public void hasMadeOfMaterial(){
         assertEquals("wood", piano.getMadeOfMaterial());
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("bing bing BINNNG bing", piano.play());
+    }
 }

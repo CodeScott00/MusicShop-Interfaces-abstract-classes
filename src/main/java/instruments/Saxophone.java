@@ -12,4 +12,8 @@ public class Saxophone extends Instrument{
     public int getNumOfValves() {
         return numOfValves;
     }
+
+    public String play(){
+        return "bing bing BINNNG bing";
+    }
 }

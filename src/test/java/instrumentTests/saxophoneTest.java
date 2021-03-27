@@ -24,4 +24,9 @@ public class saxophoneTest {
     public void hasColour(){
         assertEquals("gold", saxophone.getColour());
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("bing bing BINNNG bing", saxophone.play());
+    }
 }

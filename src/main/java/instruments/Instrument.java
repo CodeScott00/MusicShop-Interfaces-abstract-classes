@@ -3,7 +3,7 @@ package instruments;
 import behaviours.IPlay;
 
 //will implemnt iplay next and then be passed down and tested at sublclasses
-public abstract class Instrument  {
+public abstract class Instrument implements IPlay {
 
     private String madeOfMaterial;
     private String colour;
