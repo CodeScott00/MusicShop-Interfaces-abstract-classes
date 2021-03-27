@@ -1,6 +1,10 @@
 package accessories;
 
-public abstract class StockItems {
+import behaviours.ISell;
+
+import java.util.stream.IntStream;
+
+public abstract class StockItems implements ISell {
 
     private double priceBought;
     private double priceSold;

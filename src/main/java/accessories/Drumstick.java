@@ -19,9 +19,13 @@ public class Drumstick extends StockItems{
         return make;
     }
 
+    public double calculateMarkUp(){
+        double markup = getPriceSold() - getPriceBought();
+        return markup;
+    }
 
 
+    }
 
-}
 
 

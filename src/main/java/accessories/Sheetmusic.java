@@ -19,4 +19,8 @@ public class Sheetmusic extends StockItems {
     public String getDescription() {
         return description;
     }
+
+    public double calculateMarkUp(){
+        return getPriceSold() - getPriceBought();
+    }
 }

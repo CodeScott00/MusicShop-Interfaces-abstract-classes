@@ -24,4 +24,10 @@ public class DrumstickTest {
     public void hasPriceBought(){
         assertEquals(20, drumstick.getPriceBought(), 0);
     }
+
+    @Test
+    public void canHaveMarkup(){
+        assertEquals(20, drumstick.calculateMarkUp(), 0);
+    }
 }
+
